@@ -1,12 +1,17 @@
-# LoRA Metadata Viewer/Editor
+# 🍋 LoRA Metadata Viewer/Editor
+
+This is forked from https://github.com/Xypher7/lora-metadata-viewer 
+
+I added a "Suggested Prompt" section which listed the top 10 tags in a format which can be easily used as a prompt for image generation. 
+
+There is a hardcoded blacklist which filters out words that are likely not required to trigger a Lora's intended image such as "smile" or "open mouth"
+
+---
 
 Single file pure HTML tool for viewing and editing LoRA metadata locally on your web browser without the need of installation or internet connectivity.
 ## Usage
 
 No need for prior setup, just open the HTML file with the web browser of your choice and drag a Safetensors file. Alternatively, you can use the version hosted on GitHub through the link provided in the demo section.
-## Demo
-
-https://xypher7.github.io/lora-metadata-viewer
 
 
 ## Features
