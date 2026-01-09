@@ -1,0 +1,32 @@
+.light-theme { --bg:##F4F4F4; --vltheme:#3e3a3e; --ltheme:#dddbd6; --theme:#e2dfd8; --dtheme:#ebe8e1; --vdtheme:#f1f0e4; }
+.dark-theme { --bg:#121212; --vltheme:#c1c5c1; --ltheme:#2C2E33; --theme:#373A40; --dtheme:#25262b; --vdtheme:#1A1B26; }
+:root { --blue:#4dabf7; --red:#dc3545; }
+body { font-family: Arial, sans-serif; background-color:var(--bg); color: var(--vltheme); margin:0; }
+.body-content { margin:10px; }
+#dropArea { width: 100%; border: 2px dashed var(--theme); text-align: center; padding: 30px 0; margin-bottom: 20px; background-color: var(--dtheme); border-radius: 20px; }
+#dropArea.hover { background-color: var(--ltheme); }
+.collapsible { cursor: pointer; user-select: none; margin-bottom: 5px; }
+.collapsible:hover { background-color: var(--vdtheme); border-radius: 10px; }
+.collapsible::before { content: "▼ "; display: inline-block; width: 1em; }
+.active::before { content: "▲ "; }
+.content { display: none; padding: 5px; position: relative; }
+.copy-btn { position: absolute; top: 1.5em; right: 0.5em; background-color: transparent; border: none; color: grey; }
+.copy-btn:hover { background-color: grey; color: white; border-radius: 5px; }
+.note { font-size: 0.7em; font-style: italic; }
+.header { margin:20px; font-size: 2em; font-weight: bold; }
+.footer { margin:10px; text-align: center; font-size: 0.9em; }
+#notificationPanel, #editorNotificationPanel { text-align: center; color:var(--red); font-weight: bold; }
+a { color: var(--blue); font-weight: bold; }
+textarea { width:100%; color: var(--vltheme); background-color: var(--ltheme); border-radius: 10px;  }
+hr { border: none; border-bottom: 1px solid var(--theme); }
+input[type=checkbox] { margin: 10px;}
+code { border-radius: 10px;}
+.editor-header { text-align: center; margin: 10px; }
+.editor-header button, .settings-button { font-size: 1.1em; color: var(--vltheme); background-color: var(--ltheme); border: none; border-radius: 10px; padding:8px; }
+.editor-header button:hover, .settings-button:hover { background-color: var(--theme); }
+.settings-button { margin-top: 20px;}
+/* https://svgicons.sparkk.fr */
+.svg-icon { width: 1em; height: 1em;}
+.svg-icon-lg { width: 3em; height: 3em;}
+.svg-icon path, .svg-icon polygon, .svg-icon rect { fill: var(--vltheme); }
+.svg-icon circle { stroke: var(--vltheme); stroke-width: 1; }
